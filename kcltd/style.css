@@ -1,0 +1,282 @@
+/* CSS for sidebar */
+.sidebar {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 16px;
+}
+
+/* CSS for sidebar links */
+.sidebar a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #ffffff;
+    display: block;
+    margin-bottom: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+/* CSS for hover effect on links */
+.sidebar a:hover {
+    color: gray;
+}
+
+
+/* CSS for main content area */
+.main-content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+}
+
+/* CSS to toggle the sidebar */
+.toggle-sidebar {
+    position: absolute;
+    top: 20px;
+    left: 200px;
+    font-size: 20px;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 700px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .sidebar a {
+        float: left;
+    }
+
+    .main-content {
+        margin-left: 0;
+    }
+
+    .toggle-sidebar {
+        display: block;
+        text-align: right;
+        position: relative;
+    }
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+table {
+    border-collapse: collapse;
+    margin-top: 25px;
+    color: black;
+}
+
+
+td,
+th {
+    border: 1px solid rgb(5, 5, 5);
+    padding: 10px;
+}
+
+.add-form-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.add-form-container p.error {
+    text-align: justify;
+    line-height: 20px;
+    padding: 0;
+    font-size: 12px;
+}
+
+.add-form {
+    max-width: 400px;
+}
+
+form.add-form .button {
+    display: block;
+}
+.button{
+    margin-bottom: 25px;
+    background-color: #111;
+    color: white;
+    text-decoration: none;
+    font-size: 20;
+    cursor: pointer;
+}
+.mec-btn{
+    margin-left: 35%;
+    background-color: #111;
+    color: white;
+    text-decoration: none;
+    font-size: 20;
+    border-radius: 2px;
+    max-width: 100%;
+    padding: 4 6 4 6;
+}
+.adm-btn{
+    margin-left: 42%;
+    background-color: #111;
+    color: white;
+    text-decoration: none;
+    font-size: 20;
+    border-radius: 2px;
+    max-width: 100%;
+    padding: 4 6 4 6;
+}
+.save-button{
+    background-color: #111;
+    color: white;
+    text-decoration: none;
+    font-size: 20;
+    cursor: pointer;
+}
+.cust-button{
+    background-color: #111;
+    color: white;
+    text-decoration: none;
+    font-size: 20;
+    cursor: pointer;
+    
+}
+.nc-button{
+    margin-left: 70%;
+    background-color: #111;
+    color: white;
+    text-decoration: none;
+    font-size: 20;
+    border-radius: 2px;
+    max-width: 100%;
+    padding: 4 6 4 6;
+}
+.form-size {
+    max-width: 400px;
+}
+
+label {
+    margin-right: 20px;
+    
+}
+
+input,
+select {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 6px;
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+
+input[type=radio] {
+    width: auto;
+}
+
+.active {
+    background-color: #919191;
+    color: rgb(255, 255, 255);
+}
+
+a:active {
+    background-color: #6d6d6d;
+    color: rgb(255, 255, 255);
+}
+
+.back{
+    margin-left: 36%;
+    text-decoration: none;
+    font-size: 20;
+    color: black;
+}
+.logout{
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.action-edit{
+    margin-right: 14px;
+    color: white;
+    background-color: #111;
+    padding: 4 6 4 6;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 2px;
+}
+
+.action-delete{
+    color: white;
+    background-color: rgb(255, 0, 0);
+    padding: 4 6 4 6;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 2px;
+
+}
+
+.home-content .overview-boxes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 26px;
+    padding-left: 45px;
+}
+
+.overview-boxes .box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(100% / 4 - 15px);
+    background: rgb(183, 182, 182);
+    padding: 15px 14px;
+    margin-left: 15px;
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
+.overview-boxes .box-topic{
+    font-size: 18;
+    font-weight: 500;
+}
+
+.home-content .box .number{
+    display: inline-block;
+    font-size: 25px;
+    margin-top: 5px;
+    font-weight: 500;
+}
+
+.home-content .box .indicator{
+    display: flex;
+    align-items: center;
+}
+
+.home-content .box .indicator i{
+    height: 20px;
+    width: 20px;
+    background: #8FDACB;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+.home-content .box .indicator .text{
+    font-size: 12px;
+}
+
+.welcome{
+    margin-left: 20%;
+}
